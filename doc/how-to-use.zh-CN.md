@@ -7,11 +7,11 @@
 2. 提取 `navicat16-premium-en.AppImage` 里的所有文件到一个文件夹，例如 `~/navicat16-premium-en-patched`:
 
    ```bash
-   $ mkdir ~/navicat16-premium-en
-   $ sudo mount -o loop ~/navicat16-premium-en.AppImage ~/navicat16-premium-en
-   $ cp -r ~/navicat16-premium-en ~/navicat16-premium-en-patched
-   $ sudo umount ~/navicat16-premium-en
-   $ rm -rf ~/navicat16-premium-en
+    mkdir ~/navicat16-premium-en
+    sudo mount -o loop ~/navicat16-premium-en.AppImage ~/navicat16-premium-en
+    cp -r ~/navicat16-premium-en ~/navicat16-premium-en-patched
+    sudo umount ~/navicat16-premium-en
+    rm -rf ~/navicat16-premium-en
    ```
 
 3. [编译patcher和keygen](how-to-build.zh-CN.md)。
@@ -29,7 +29,7 @@
    __例如：__
 
    ```bash
-   $ ./navicat-patcher ~/navicat16-premium-en-patched
+    ./navicat-patcher ~/navicat16-premium-en-patched
    ```
 
    __Navicat Premium 16.0.7 英文版 for Linux__ 已经通过测试，下面是一份样例输出：
@@ -92,16 +92,16 @@
    __例如：__
 
    ```bash
-   $ wget 'https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage'
-   $ chmod +x appimagetool-x86_64.AppImage
-   $ ./appimagetool-x86_64.AppImage ~/navicat16-premium-en-patched ~/navicat16-premium-en-patched.AppImage
+    wget 'https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage'
+    chmod +x appimagetool-x86_64.AppImage
+    ./appimagetool-x86_64.AppImage ~/navicat16-premium-en-patched ~/navicat16-premium-en-patched.AppImage
    ```
 
 6. 运行刚生成的AppImage：
 
    ```bash
-   $ chmod +x ~/navicat16-premium-en-patched.AppImage
-   $ ~/navicat16-premium-en-patched.AppImage
+    chmod +x ~/navicat16-premium-en-patched.AppImage
+    ~/navicat16-premium-en-patched.AppImage
    ```
 
 7. 使用 `navicat-keygen` 来生成 __序列号__ 和 __激活码__。
@@ -124,7 +124,7 @@
    __例如：__
 
    ```bash
-   $ ./navicat-keygen --text ./RegPrivateKey.pem
+    ./navicat-keygen --text ./RegPrivateKey.pem
    ```
 
    你会被要求选择Navicat产品类别、Navicat语言版本和填写主版本号。之后一个随机生成的 __序列号__ 将会给出。
@@ -215,7 +215,7 @@
 12. 最后清理：
 
     ```bash
-    $ rm ~/navicat16-premium-en.AppImage
-    $ rm -rf ~/navicat16-premium-en-patched
-    $ mv ~/navicat16-premium-en-patched.AppImage ~/navicat16-premium-en.AppImage
+    rm ~/navicat16-premium-en.AppImage
+    rm -rf ~/navicat16-premium-en-patched
+    mv ~/navicat16-premium-en-patched.AppImage ~/navicat16-premium-en.AppImage
     ```
