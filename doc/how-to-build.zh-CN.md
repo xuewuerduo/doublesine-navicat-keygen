@@ -5,7 +5,7 @@
 1. 安装最新的 `CMake`:
 
    ```bash
-   sudo apt-get -y install cmake
+   sudo apt-get -y install cmake g++
    ```
 
 2. 安装 `fmt`、`OpenSSL` 和 `rapidjson`:
