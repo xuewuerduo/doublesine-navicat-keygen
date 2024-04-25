@@ -11,7 +11,7 @@
 2. 安装 `fmt`、`OpenSSL` 和 `rapidjson`:
 
    ```bash
-   sudo apt-get -y install libfmt-dev libssl-dev rapidjson-dev
+   sudo apt-get -y install libfmt-dev libssl-dev rapidjson-dev pkg-config
    ```
 
 ## 2. 编译
