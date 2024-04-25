@@ -5,13 +5,13 @@
 1. 安装最新的 `CMake`:
 
    ```bash
-   sudo apt-get install cmake
+   sudo apt-get -y install cmake
    ```
 
 2. 安装 `fmt`、`OpenSSL` 和 `rapidjson`:
 
    ```bash
-   sudo apt-get install libfmt-dev libssl-dev rapidjson-dev
+   sudo apt-get -y install libfmt-dev libssl-dev rapidjson-dev
    ```
 
 ## 2. 编译
